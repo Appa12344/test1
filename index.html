@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svg</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="./image/logo.jpg">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Svg</a></li>
+                <li><a href="#Linear">LinearGradient</a></li>
+                <li><a href="#Radial">RadialGradient</a></li>
+                <li><a href="#Star">Svg Star</a></li>
+                <li><a href="#Coder">Code Editor</a></li>
+                <li><a href="#Quiz">Quiz</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>What is<span>SVG Gradient</span>?</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="./image/main.png">
+            </div>
+
+        </div>
+
+        <p>A gradient is a smooth transition from one color to another. 
+            In addition, several color transitions can be applied to the same element.<br><br>
+            <br>
+        <b>There are two main types of gradients in SVG:</b><br>
+        1.Linear<br>
+        2.Radial
+    </p>
+    </section>
+
+
+
+    <!-- linearGradient -->
+    <div class="linear" id="Linear">
+        <h1>Svg<span>linearGradient</span>-< linearGradient></h1>
+        <p>The <b><u>linearGradient</b></u> element is used to define a linear gradient.<br>
+    <br>The <u><b>linearGradient</b></u> element must be nested within a <b><u>defs</u> </b>tag.<br>
+         The <b><u>defs </u></b>tag is short for definitions and contains definition of special elements (such as gradients).<br>
+          <br><b>Linear gradients can be defined as<span>horizontal, vertical or angular</span> gradients:</b><br><br>
+            1.Horizontal gradients are created when y1 and y2 are equal and x1 and x2 differ<br>
+            2.Vertical gradients are created when x1 and x2 are equal and y1 and y2 differ<br>
+            3.Angular gradients are created when x1 and x2 differ and y1 and y2 differ<br></p><br>
+            <h2> Some Examples</h2>
+    
+
+        <div class="linear_image_box">
+            <div class="linear_image">
+                <img src="./image/svg2.png">
+
+                <h3>Example 1</h3>
+                <h5>
+                    Define an ellipse with a horizontal linear gradient from yellow to red:</h5>
+                <a href="#" class="linear_btn">check code</a>
+            </div>
+
+            <div class="linear_image">
+                <img src="image/svg.png">
+
+                <h3>Example 2</h3>
+                <h5>
+                    Define an ellipse with a vertical linear gradient from yellow to red:</h5>
+               <a href="#" class="linear_btn">check code</a>
+            </div>
+
+            <div class="linear_image">
+                <img src="image/svg1.png">
+
+                <h3>Example 3</h3>
+                <h5>Define an ellipse with a horizontal linear gradient from yellow to red, and add a text inside:   
+                </h5>
+                <a href="#" class="linear_btn">check code</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- radialGradient -->
+
+     <div class="radial" id="Radial">
+        <div class="radial_main">
+
+            <div class="image">
+                <img src="image/svg3.png">
+            </div>
+
+            <div class="radial_text">
+                <h1>Svg<span>RadialGradient</span><br>< radialGradient ></h1>
+                <p>The <b><u> < radialGradie ></b></u> element is used to define a radial gradient.<br>
+                The < radialGradient > element must be nested within a <b><u>defs</u></b> tag. <br>
+                The <b><u>defs</u></b> tag is short for definitions and contains definition of special elements (such as gradients).<br></p>
+             <h2>Example 4</h2>
+            <p>Define an ellipse with a radial gradient from white to blue: </p>
+      
+            </div>
+
+        </div>
+    </div>
+    <!-- svg star -->
+    <div class="star" id="Star">
+        <h1>Svg<span> Star</span></h1>
+        <p>*Polygon comes from Greek. <b>"Poly"</b> means<b> "many"</b> and<b>"gon"</b> means<b>"angle"</b>.<br>
+        < svg > with < polygon > element used to draw a star<br>
+        To draw star,we need to provide the x,y coordinates for 5 angles,<br>
+        However, weneed to provide one value at the first point set and one at the last to draw a star.
+        <br>points : specified to establish the x and y coordinates.<br>
+        <b><u>Example :</u></b>< polygon point 30,20 290,30 180,60 > < /polygon ></p>       
+        
+        <div class="star_image_box">
+            <div class="star_image">
+                <img src="image/svg5.png">
+
+                <h3>Example 1</h3>
+                <h5>
+                    Change the fill-rule property to "evenodd"
+                </h5>
+                <a href="#" class="star_btn"id="Code">check code</a>
+            </div>
+
+            <div class="star_image">
+                <img src="image/star.png">
+
+                <h3>Example 2</h3>
+                <h5>
+                    Use the <b><u>< polygon ></u></b> element to create a star:
+                </h5>
+               <a href="#" class="star_btn" id="Code">check code</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- code editor -->
+    <div class="coder" id="Coder">
+        <h1>Check code using <span>Code Editor</span></h1>
+        <div class="code_image">
+        <center>
+         <a href="svg.html" target="_blank">
+            <img src="image/code.png" alt="Code Editor" height="100" width="450"></a>
+        </center>
+        </div>
+    </div>
+
+    
+    <!-- question -->
+    <div class="quiz" id="Quiz">
+        <h1><span>Question_</span> About this Topic</h1>
+        <div class="quiz_image">
+        <center>
+           <a href="que.html" target="_blank">
+            <img src="image/que.png" height="300" width="600">
+           </a> 
+        </center>
+        </div>
+    </div>

@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 90px;
+    cursor: pointer;
+    margin: 3px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+    margin-left: 15px;
+    font-family:mv boli ;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color:rgb(227, 39, 36);
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -50px;
+    left: 20px;
+    font-family: cursive;
+}
+
+section .main .men_text h1 span{
+    margin-left: 10px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 600px;
+    position: relative;
+    left: 5px;
+    top: 50px ;
+}
+
+section p{
+    width: 550px;
+    text-align: left;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    line-height: 22px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+/* linearGradient */
+.linear{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.linear h1{
+    font-size: 55px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    top: 20px;
+    font-family: comic sans ms;
+}
+
+.linear h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.linear h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.linear p{
+    text-align: left;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.linear p span{
+    color: #fac031;
+    font-family: mv boli;
+}
+.linear h2{
+    font-family: mv boli;
+    font-size: 50px;
+}
+.linear .linear_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.linear .linear_image_box .linear_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.linear .linear_image_box .linear_image img{
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.linear .linear_image_box .linear_image:hover img{
+    opacity: 0.4;
+}
+
+.linear .linear_image_box .linear_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.linear .linear_image_box .linear_image:hover h3{
+    opacity: 1;
+}
+
+.linear .linear_image_box .linear_image h5{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+    font-family: cursive;
+}
+
+.linear .linear_image_box .linear_image:hover h5{
+    opacity: 1;
+}
+
+.linear .linear_image_box .linear_image .linear_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.linear .linear_image_box .linear_image:hover .linear_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* radialGradient */
+.radial{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.radial .radial_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.radial .radial_main .image img{
+    width: 600px;
+    position: relative;
+    top: 60px;
+}
+
+.radial .radial_main .radial_text h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.radial .radial_main .radial_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 10px;
+
+}
+.radial .radial_main .radial_text p{
+    width: 550px;
+    text-align: justify;
+    margin-right:10px;
+    line-height: 22px;
+    font-family: cursive;
+}
+.radial h2{
+    font-family: mv boli;
+    font-size: 20px;
+}
+/* svg star */
+.star{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.star h1{
+    font-size: 55px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    top: 20px;
+    font-family: comic sans ms;
+}
+
+.star h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.star h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.star p{
+    text-align: left;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.star h2{
+    font-family: mv boli;
+    font-size: 50px;
+}
+.star .star_image_box{
+    width: 50%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.star .star_image_box .star_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.star .star_image_box .star_image img{
+    width: 370px;
+    height: 320px;
+    transition: .3s;
+
+}
+
+.star .star_image_box .star_image:hover img{
+    opacity: 0.4;
+}
+
+.star .star_image_box .star_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fac031;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.star .star_image_box .star_image:hover h3{
+    opacity: 1;
+}
+
+.star .star_image_box .star_image h5{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+    font-family: cursive;
+}
+
+.star .star_image_box .star_image:hover h5{
+    opacity: 1;
+}
+
+.star .star_image_box .star_image .star_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: #fac031;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.star .star_image_box .star_image:hover .star_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+.coder{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.coder h1{
+    font-size: 55px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    top: 10px;
+    font-family: comic sans ms;
+}
+
+.coder h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+.coder h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.coder .code_image img{
+    padding:5px;
+    position: relative;
+    top: 100px;
+
+}
+.quiz{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.quiz h1{
+    font-size: 55px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    top: 10px;
+    font-family: comic sans ms;
+}
+.quiz h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+.quiz .quiz_image img{
+    padding:5px;
+    position: relative;
+    top: 70px
+}
